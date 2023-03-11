@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="625.0" prefWidth="1025.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CustMenu">
+   <children>
+      <TableView fx:id="custTable" layoutX="14.0" layoutY="65.0" prefHeight="500.0" prefWidth="1000.0">
+        <columns>
+            <TableColumn fx:id="idCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="ID" />
+          <TableColumn fx:id="nameCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="Name" />
+            <TableColumn fx:id="addressCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="Address" />
+          <TableColumn fx:id="zipCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="Zip Code" />
+            <TableColumn fx:id="phCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="Phone" />
+            <TableColumn fx:id="countryCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="Country" />
+            <TableColumn fx:id="divCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="Division" />
+            <TableColumn fx:id="divIDCol" maxWidth="250.0" minWidth="75.0" prefWidth="100.0" text="DivisionID" />
+
+        </columns>
+      </TableView>
+      <Button layoutX="14.0" layoutY="579.0" mnemonicParsing="false" onAction="#newCust" text="New Customer" />
+      <Button layoutX="121.0" layoutY="579.0" mnemonicParsing="false" onAction="#modCust" text="View/Modify Customer" />
+      <Button layoutX="272.0" layoutY="579.0" mnemonicParsing="false" onAction="#delCust" text="Delete Customer" />
+      <Label layoutX="13.0" layoutY="14.0" text="Customers">
+         <font>
+            <Font name="Courier New" size="36.0" />
+         </font></Label>
+      <Button layoutX="970.0" layoutY="579.0" mnemonicParsing="false" onAction="#back" text="Back" />
+      <TextField fx:id="searchCust" layoutX="865.0" layoutY="23.0" promptText="Search Customers by ID" />
+   </children>
+</AnchorPane>

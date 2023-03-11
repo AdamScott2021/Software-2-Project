@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="330.0" prefWidth="263.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginScreen">
+   <children>
+      <Button fx:id="closePgm" layoutX="170.0" layoutY="253.0" mnemonicParsing="false" onAction="#closePgm" text="Exit" />
+      <Button fx:id="loginButtonB" layoutX="55.0" layoutY="253.0" mnemonicParsing="false" text="Login" />
+      <Label fx:id="unLabel" layoutX="56.0" layoutY="87.0" text="UserName" />
+      <Label fx:id="pwLabel" layoutX="53.0" layoutY="172.0" text="Password" />
+      <TextField fx:id="userName" layoutX="56.0" layoutY="112.0" />
+      <TextField fx:id="passWord" layoutX="56.0" layoutY="196.0" />
+      <Label fx:id="lsLabel" layoutX="47.0" layoutY="24.0" text="Login">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="locationLabel" layoutX="55.0" layoutY="299.0" text="Location" />
+      <Label fx:id="lsLabel2" layoutX="113.0" layoutY="24.0" text="Screen">
+         <font>
+            <Font name="Courier New" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
